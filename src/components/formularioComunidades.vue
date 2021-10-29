@@ -51,7 +51,7 @@
                 axios.post(
                    'https://backend-com-ind-p8.herokuapp.com/comunidades/',
                    this.registroComunidades, 
-                   {headers:{ 'Content-Type': 'application/json'}}
+                   {headers:{ 'Content-Type': 'application/json', "Access-Control-Allow-Origin": "*"}}
                 )
                 .then((result) => {
                     console.log("funciono")
