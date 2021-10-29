@@ -55,7 +55,7 @@
                 axios.post(
                    'https://backend-com-ind-p8.herokuapp.com/productGet/',
                    this.registroProductos, 
-                   {headers:{ 'Content-Type': 'application/json', "Access-Control-Allow-Origin": "*"}}
+                   {headers:{ 'Content-Type': 'application/json', 'Access-Control-Allow-Origin': '*'}}
                     
                )
                 .then((result) => {
