@@ -48,7 +48,7 @@
            fetch(){
              
 
-            axios.get("http://127.0.0.1:8000/comunidadesYproductosList/")
+            axios.get("https://backend-com-ind-p8.herokuapp.com/comunidadesYproductosList/")
             .then((res) => {
                 
                  let lista = res.data.sort(this.compare)

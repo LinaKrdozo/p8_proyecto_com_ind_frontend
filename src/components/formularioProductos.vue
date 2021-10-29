@@ -53,7 +53,7 @@
         methods:{
             processRegistroProductos: function(){
                 axios.post(
-                   'http://localhost:8000/productGet/',
+                   'https://backend-com-ind-p8.herokuapp.com/productGet/',
                    this.registroProductos, 
                    {headers:{ 'Content-Type': 'application/json'}}
                     

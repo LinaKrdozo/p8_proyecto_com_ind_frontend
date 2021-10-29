@@ -49,7 +49,7 @@
         methods:{
             processRegistroComunidades: function(){
                 axios.post(
-                   'http://localhost:8000/comunidades/',
+                   'https://backend-com-ind-p8.herokuapp.com/comunidades/',
                    this.registroComunidades, 
                    {headers:{ 'Content-Type': 'application/json'}}
                 )

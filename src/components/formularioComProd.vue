@@ -53,7 +53,7 @@
                 console.log("comunidades: ",comunidades)
                 
                 axios.get(
-                   'http://127.0.0.1:8000/comunidadesList/'
+                   'https://backend-com-ind-p8.herokuapp.com/comunidadesList/'
                 )
                 .then(response => {
                     this.comunidades = response.data;
@@ -69,7 +69,7 @@
                 
                 
                 axios.get(
-                   'http://127.0.0.1:8000/productList/'
+                   'https://backend-com-ind-p8.herokuapp.com/productList/'
                 )
                 .then(response => {
                     this.productos = response.data;
@@ -83,7 +83,7 @@
                 console.log("registroComProd: ", JSON.stringify(this.registroComProd) )
                 
                 axios.post(
-                   'http://127.0.0.1:8000/comunidadesYproductos/',
+                   'https://backend-com-ind-p8.herokuapp.com/comunidadesYproductos/',
                    this.registroComProd 
                 )
                 .then((result) => {
